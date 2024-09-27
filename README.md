@@ -51,4 +51,39 @@ Thanks to:
 * All others who provided input
 
 Feel free to share your INI configurations!
-
+---------------------------------------------------------------------------------
+```
+Build started
+git clone -q --branch=master https://github.com/x64dbg/SlothBP.git C:\projects\slothbp
+git checkout -qf 176d161e753883fc1ce9fafb5604c1b408c673ed
+msbuild.exe SlothBP.sln /verbosity:minimal /t:Build /p:Configuration=Release;Platform=Win32
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+  plugin.cpp
+  pluginmain.cpp
+     Creating library C:\projects\slothbp\bin\x32\SlothBP.lib and object C:\projects\slothbp\bin\x32\SlothBP.exp
+  Generating code
+  Finished generating code
+  SlothBP.vcxproj -> C:\projects\slothbp\bin\x32\SlothBP.dp32
+msbuild.exe SlothBP.sln /verbosity:minimal /t:Build /p:Configuration=Release;Platform=x64
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+  plugin.cpp
+  pluginmain.cpp
+     Creating library C:\projects\slothbp\bin\x64\SlothBP.lib and object C:\projects\slothbp\bin\x64\SlothBP.exp
+  Generating code
+  Finished generating code
+  SlothBP.vcxproj -> C:\projects\slothbp\bin\x64\SlothBP.dp64
+call release.bat
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+Discovering tests...OK
+Collecting artifacts...
+Found artifact 'release' matching 'release' path
+Uploading artifacts...
+[1/1] release.zip (195,302 bytes)...100%
+````
+---------------------------------------------
+Build success
